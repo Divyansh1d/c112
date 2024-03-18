@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <H1 class="heading">FACE WEB RECOGNITION APP</H1>
+        <br>
+        <br>
+        <hr>
+
+        <h4>FATHER</h4>
+        <hr>
+        <H4>MOTHER</H4>
+        <hr>
+        <H4>BROTHER</H4>
+        <hr>
+        <H4>MYSELF</H4>
+        <hr>
+        <br>
+        <div id="camera">
+        </div>
+        <hr>
+        <div id="result"></div>
+        <button onclick=captureImage()>Capture Image</button>
+        <br>
+        <br>
+        <button onclick="identifyImage()">Identify Image</button>
+       <span><h3>THE IDENTIFIED IMAGE IS OF -</h3></span><span><h3 id="answer"></h3></span>
+       <span><h3>ACCURACY -</h3></span><span><h3 id="accuracy"></h3></span>
+    </body>
+</html>
